@@ -1,7 +1,10 @@
 {
   "expo": {
-    "name": "payexpress",
-    "slug": "payexpress",
+    "name": "Fhinpay",
+    "slug": "Fhinpay",
+    "expo": {
+      "sdkVersion": "21.0.0"
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.jpg",
@@ -32,7 +35,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "e33976c7-5af7-489d-aa6f-c7169980b1a8"
+        "projectId": "f691c8d2-e2b0-44eb-9bad-f78369640d1a"
       }
     }
   }

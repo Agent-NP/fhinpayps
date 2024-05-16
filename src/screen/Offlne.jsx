@@ -94,29 +94,35 @@ export default function Offline({ navigation, route }) {
 
     const htmlContent = `<body>
     <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sixing: border-box;
+      font-size: 8px;
+    }
         body {
             position: relative;
-            font-size: small;
+            font-size: x-small;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: left;
+            align-items: start;
         }
 
         #box3 {
-            width: 450px;
-            padding: 10px 10px;
+            width: 140px;
+            padding: 2px 2px;
             background-color: white;
             border-radius: 20px;
         }
 
         #header {
-            font-size: 3rem;
+            font-size: 2rem;
             text-align: center;
             width: 100%;
         }
 
         #header2 {
-            font-size: 1.5rem;
+            font-size: 0.5rem;
             text-align: center;
             width: 100%;
         }
@@ -128,44 +134,44 @@ export default function Offline({ navigation, route }) {
         }
 
         #headerContainer {
-            margin: 10px 0px;
+            margin: 5px 0px;
         }
     </style>
     <div id="box3">
         <div id="headerContainer">
-            <span style="display: inline-block; margin-top: 10px; font-weight: bold;" id="header">FHINPAY</span>
-            <span style="display: inline-block; margin-top: 10px; font-weight: bold;" id="header2">OFFLINE CARD
+            <span style="display: inline-block; margin-top: 5px; font-weight: bold;" id="header">FHINPAY</span>
+            <span style="display: inline-block; margin-top: 5px; font-weight: bold;" id="header2">OFFLINE CARD
                 PAYMENT</span>
             <style>
-                table {
-                    border-collapse: collapse;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                }
+            table {
+              border-collapse: collapse;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+          }
 
-                tr {
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 10px 0px;
-                }
+          tr {
+              display: flex;
+              justify-content: space-between;
+              margin: 5px 0px;
+          }
 
-                th,
-                td {
-                    padding: 2px 8px;
-                    text-align: left;
-                }
+          th,
+          td {
+              padding: 1px 4px;
+              text-align: left;
+          }
 
-                th:first-child,
-                td:first-child {
-                    font-weight: bold;
-                    text-align: left;
-                }
+          th:first-child,
+          td:first-child {
+              font-weight: bold;
+              text-align: left;
+          }
 
-                th:last-child,
-                td:last-child {
-                    text-align: right;
-                }
+          th:last-child,
+          td:last-child {
+              text-align: right;
+          }
             </style>
         </div>
         <span id="text-body">
@@ -216,14 +222,14 @@ export default function Offline({ navigation, route }) {
                 </tr>
                 <tr>
                     <td>MESSAGE: </td>
-                    <td>Insufficent Balance</td>
+                    <td style="font-weight: bold; font-size: 9px;">Insufficent Balance</td>
                 </tr>
-                <tr style="display: inline-flex; margin: 10px 0px;">
-                    <td style="text-align: center; font-size: 15px; opacity: 0.8; filter: blur(2px);">I agree to pay
+                <tr style="display: inline-flex; margin: 8px 0px;">
+                    <td style="text-align: center; opacity: 0.8; filter: blur(0.2px);">I agree to pay
                         above total amount according to card issuer agreement, merchant agreement if credit voucher</td>
                 </tr>
-                <tr style="display: inline-flex; margin: 20px 0px; justify-content: center; width: 100%;">
-                    <td style="text-align: center; font-size: 15px; opacity: 0.8; filter: blur(1px);">Merchant Copy</td>
+                <tr style="display: inline-flex; margin: 5px 0px; justify-content: center; width: 100%;">
+                    <td style="text-align: center; opacity: 0.8; filter: blur(0.2px);">Merchant Copy</td>
                 </tr>
             </table>
         </span>
