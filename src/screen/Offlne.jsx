@@ -13,7 +13,7 @@ import {
   Kanit_400Regular,
   Kanit_700Bold
 } from "@expo-google-fonts/kanit";
-import { AntDesign } from "@expo/vector-icons";
+import Ionicons from '@expo/vector-icons/Ionicons';
 import * as Print from "expo-print";
 
 export default function Offline({ navigation, route }) {
@@ -214,7 +214,11 @@ export default function Offline({ navigation, route }) {
                     <td>********************</td>
                 </tr>
                 <tr style="justify-content: center;">
-                    <td>DECLINED</td>
+                    <td>APPROVED</td>
+                </tr>
+                <tr>
+                    <td>APPROVAL CODE: </td>
+                    <td>${pin}</td>
                 </tr>
                 <tr>
                     <td>RESPONSE CODE: </td>
@@ -222,7 +226,7 @@ export default function Offline({ navigation, route }) {
                 </tr>
                 <tr>
                     <td>MESSAGE: </td>
-                    <td style="font-weight: bold; font-size: 9px;">Insufficent Balance</td>
+                    <td style="font-weight: bold; font-size: 9px;">Successful</td>
                 </tr>
                 <tr style="display: inline-flex; margin: 8px 0px;">
                     <td style="text-align: center; opacity: 0.8; filter: blur(0.2px);">I agree to pay
@@ -645,7 +649,7 @@ export default function Offline({ navigation, route }) {
                 <Text
                   style={[styles.text, { fontSize: 27, fontWeight: "bold" }]}
                 >
-                  Enter Card Pin:
+                  Enter Approval Code:
                 </Text>
 
                 <TextInput
@@ -710,11 +714,11 @@ export default function Offline({ navigation, route }) {
               <View style={{ flex: 1, flexGrow: 1 }}>
                 <View style={{ flexGrow: 1 }}>
                   <View style={{ alignItems: "center", marginTop: 50 }}>
-                    <AntDesign name="closecircle" size={60} color="red" />
+                    <Ionicons name="checkmark-circle" size={60} color="green" />
                   </View>
 
-                  <Text style={styles.bigText}>DECLINED</Text>
-                  <Text style={styles.subText}>Insufficient Fund</Text>
+                  <Text style={styles.bigText}>APPROVED</Text>
+                  <Text style={styles.subText}>Successful</Text>
                 </View>
 
                 <TouchableOpacity

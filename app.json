@@ -25,7 +25,7 @@
         "foregroundImage": "./assets/icon.jpg",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.chibestman.payexpress"
+      "package": "com.chibestman.fhinpay"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -35,7 +35,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "f691c8d2-e2b0-44eb-9bad-f78369640d1a"
+        "projectId": "a0d84173-3a2f-4ae2-93a4-456524279c24"
       }
     }
   }
