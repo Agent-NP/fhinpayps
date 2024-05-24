@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Fhinpay",
-    "slug": "Fhinpay",
+    "name": "Fhinpayy",
+    "slug": "Fhinpayy",
     "expo": {
       "sdkVersion": "21.0.0"
     },
@@ -25,7 +25,7 @@
         "foregroundImage": "./assets/icon.jpg",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.chibestman.fhinpay"
+      "package": "com.chibestman.fhinpayy"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -35,7 +35,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "a0d84173-3a2f-4ae2-93a4-456524279c24"
+        "projectId": "87030b9d-dfd0-40f5-a2c6-d2300a91ba67"
       }
     }
   }
