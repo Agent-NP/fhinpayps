@@ -658,8 +658,8 @@ export default function Offline({ navigation, route }) {
                     { marginVertical: 0, paddingTop: 5, textAlign: "center" }
                   ]}
                   autoFocus={true}
-                  placeholder="0000"
-                  maxLength={4}
+                  placeholder="000000"
+                  maxLength={6}
                   inputMode="numeric"
                   placeholderTextColor={"#ccc"}
                   onChangeText={text => {
@@ -670,7 +670,7 @@ export default function Offline({ navigation, route }) {
               <TouchableOpacity
                 style={styles.nextButton}
                 onPress={() => {
-                  if (pin.length >= 4) {
+                  if (pin.length >= 6) {
                     setShowEnterAmount(false);
                     setShowConfirmEnterAmount(false);
                     setShowEnterCardNumber(false);
