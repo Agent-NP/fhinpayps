@@ -13,7 +13,7 @@ import {
   Kanit_400Regular,
   Kanit_700Bold
 } from "@expo-google-fonts/kanit";
-import Ionicons from '@expo/vector-icons/Ionicons';
+import AntDesign from '@expo/vector-icons/AntDesign';
 import * as Print from "expo-print";
 
 export default function Offline({ navigation, route }) {
@@ -140,7 +140,7 @@ export default function Offline({ navigation, route }) {
     <div id="box3">
         <div id="headerContainer">
             <span style="display: inline-block; margin-top: 5px; font-weight: bold;" id="header">FHINPAY</span>
-            <span style="display: inline-block; margin-top: 5px; font-weight: bold;" id="header2">OFFLINE CARD
+            <span style="display: inline-block; margin-top: 5px; font-weight: bold;" id="header2">ONLINE CARD
                 PAYMENT</span>
             <style>
             table {
@@ -214,7 +214,7 @@ export default function Offline({ navigation, route }) {
                     <td>********************</td>
                 </tr>
                 <tr style="justify-content: center;">
-                    <td>APPROVED</td>
+                    <td>DECLINE</td>
                 </tr>
                 <tr>
                     <td>APPROVAL CODE: </td>
@@ -226,7 +226,7 @@ export default function Offline({ navigation, route }) {
                 </tr>
                 <tr>
                     <td>MESSAGE: </td>
-                    <td style="font-weight: bold; font-size: 9px;">Successful</td>
+                    <td style="font-weight: bold; font-size: 9px;">Insufficient funds</td>
                 </tr>
                 <tr style="display: inline-flex; margin: 8px 0px;">
                     <td style="text-align: center; opacity: 0.8; filter: blur(0.2px);">I agree to pay
@@ -350,7 +350,7 @@ export default function Offline({ navigation, route }) {
   }, []);
 
   const firstButton = {
-    name: "Offline",
+    name: "Online",
     key: 1
   };
   const secondButton = {
@@ -425,7 +425,7 @@ export default function Offline({ navigation, route }) {
                     { fontWeight: "bold", fontSize: 30, letterSpacing: 3 }
                   ]}
                 >
-                  OFFLINE
+                  ONLINE
                 </Text>
               </View>
               <View style={{ marginTop: 20 }}>
@@ -478,7 +478,7 @@ export default function Offline({ navigation, route }) {
                     { fontWeight: "bold", fontSize: 30, letterSpacing: 3 }
                   ]}
                 >
-                  OFFLINE
+                  ONLINE
                 </Text>
               </View>
               <View style={{ marginTop: 20 }}>
@@ -517,7 +517,7 @@ export default function Offline({ navigation, route }) {
                     { fontWeight: "bold", fontSize: 30, letterSpacing: 3 }
                   ]}
                 >
-                  OFFLINE
+                  ONLINE
                 </Text>
               </View>
               <View style={{ marginTop: 10 }}>
@@ -634,7 +634,7 @@ export default function Offline({ navigation, route }) {
                     { fontWeight: "bold", fontSize: 30, letterSpacing: 3 }
                   ]}
                 >
-                  OFFLINE
+                  ONLINE
                 </Text>
               </View>
               <View style={{ marginTop: 10 }}>
@@ -699,7 +699,7 @@ export default function Offline({ navigation, route }) {
                     }
                   ]}
                 >
-                  OFFLINE
+                  ONLINE
                 </Text>
               </View>
               <View style={{ marginTop: 10 }}>
@@ -714,11 +714,11 @@ export default function Offline({ navigation, route }) {
               <View style={{ flex: 1, flexGrow: 1 }}>
                 <View style={{ flexGrow: 1 }}>
                   <View style={{ alignItems: "center", marginTop: 50 }}>
-                    <Ionicons name="checkmark-circle" size={60} color="green" />
+                    <AntDesign  name="closecircle" size={60} color="red" />
                   </View>
 
-                  <Text style={styles.bigText}>APPROVED</Text>
-                  <Text style={styles.subText}>Successful</Text>
+                  <Text style={styles.bigText}>DECLINE</Text>
+                  <Text style={styles.subText}>Insufficient funds</Text>
                 </View>
 
                 <TouchableOpacity
